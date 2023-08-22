@@ -17,7 +17,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
 		return {
 			redirect: {
-				permanent: true,
+				permanent: false,
 				destination: `${
 					`https://beingplanet.online/` + encodeURI(path as string)
 				}`,
